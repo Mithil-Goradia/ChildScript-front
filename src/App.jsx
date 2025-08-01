@@ -9,6 +9,7 @@ function App() {
 
   const handleRun = async () => {
     try {
+      //https://childscript-back.onrender.com/run-code
       const res = await fetch("https://childscript-back.onrender.com/run-code", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -23,7 +24,7 @@ function App() {
 
   return (
   <div className="relative min-h-screen font-sans">
-    <div className="relative z-10 bg-gradient-to-br from-black via-blue-950 to-green-900 min-h-screen text-white backdrop-blur-sm">
+    <div className="relative z-10 bg-black min-h-screen text-white backdrop-blur-sm">
       <Navbar onRun={handleRun} code={code} />
 
       <main className="flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-0 h-[calc(100vh-72px)] p-4">

@@ -25,22 +25,22 @@ const Navbar = ({ onRun, code }) => {
       </div>
 
       {/* Desktop Left: Docs + PDF */}
-      <div className="hidden lg:flex items-center gap-4">
+      <div className="hidden lg:flex items-center gap-8 pl-4">
         <a
           href="/ChildScript_Documentation.pdf"
           download
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-gray-500 text-gray-300 hover:bg-gray-600 hover:text-white px-4 py-1.5 rounded-md text-sm transition"
+          className="border border-gray-500 text-gray-300 hover:bg-gray-600 hover:text-white px-10 font-semibold py-1.5 rounded-md text-sm transition"
         >
-          Docs
+          Documentation
         </a>
 
         <button
           onClick={downloadAsPDF}
-          className="border border-gray-500 text-gray-300 hover:bg-gray-600 hover:text-white px-4 py-1.5 rounded-md text-sm transition"
+          className="border border-gray-500 text-gray-300 hover:bg-gray-600 hover:text-white px-10 font-semibold py-1.5 rounded-md text-sm transition"
         >
-          PDF
+          Download
         </button>
       </div>
 
